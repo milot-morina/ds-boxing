@@ -412,11 +412,17 @@ body {
 
 
 
+
 @media screen and (max-width: 768px) {
   .counter-section {
     margin-bottom: 2rem; /* add some margin below the counter sections */
     padding-bottom: 0; /* remove the padding on smaller screens */
   }
+  .brand-title img {
+    display: none;
+  }
+
+  
 }
 
 
@@ -493,15 +499,135 @@ input::placeholder {
   justify-content: center;
 }
 
+ 
+
+  @media (max-width: 555px) {
+    video {
+      display: block;
+    }
+
+    .navbar-links li a {
+      font-size: 14px;
+    }
+
+    .navbar-links ul {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem; /* Add spacing above the navbar items */
+    }
+  
+    .navbar-links li {
+      margin-bottom: 1rem;
+    }
+  
+    .socials {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .brand-title {
+      margin-bottom: 1rem; /* Add spacing below the logo */
+    }
 
 
-@media (min-width: 555px) {
-  video {
-    display: block;
+  }
+  @media screen and (max-width: 768px) {
+  .counter-section {
+    margin-bottom: 2rem; /* add some margin below the counter sections */
+    padding-bottom: 0; /* remove the padding on smaller screens */
+  }
+  .brand-title img {
+    display: none;
   }
 
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .section2 {
+    margin-top: 70px;
+  }
+
+  .section2 img {
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .text {
+    max-width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .text p {
+    font-weight: 400;
+    margin-left: 5px;
+  }
+
+  .text .section-h,
+  .section-h {
+    font-size: clamp(2.15rem, 2.5rem, 3.2rem);
+    color: #B4AC25;
+    font-weight: 700;
+  }
+
+  .images img {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .section3 .images img {
+    width: 100%;
+  }
+
+  input {
+    max-width: 100%;
+    margin: 5px auto;
+  }
+
+  .long-inputs-form > input {
+    width: 100%;
+  }
+
+  .section6 button {
+    margin-top: 17px;
+    padding: 10px 20px;
+  }
+
+  .section6 .socials {
+    justify-content: center;
+  }
 }
+
+@media (min-width: 555px) and (max-width: 768px) {
+
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .navbar-links li {
+    margin-bottom: 1rem;
+  }
+  .brand-title {
+    margin-bottom: 1rem; /* Add spacing below the logo */
+  }
+}
+
 
 
 @media(min-width: 865px) {
@@ -562,39 +688,62 @@ input::placeholder {
 }
 
 
-
-
-
-
-@media (min-width: 900px) {
-  .row {
+@media (min-width: 865px) and (max-width: 900px) {
+  .toggle-button {
     display: flex;
-    justify-content: space-between;
+  }
+
+  .navbar {
+    flex-direction: column;
     align-items: center;
   }
 
-  .div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .navbar-links {
+    display: none;
     width: 100%;
-    margin: 0 auto;
   }
 
-  
-  .long-inputs-form > input{
-    width: 470px;
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .navbar-links ul {
+    margin-top: 1rem;
+  }
+
+  .navbar-links li {
+    margin-bottom: 1rem;
+  }
+
+  .socials {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 
 
 
 
+@media (max-width: 900px) {
+  .navbar-links ul {
+    flex-direction: column; /* Change the flex-direction to column */
+    align-items: center; /* Center the items vertically */
+  }
+
+  .navbar-links li {
+    margin-bottom: 1rem; /* Add vertical spacing between navbar items */
+  }
+
+  .socials {
+    width: 100%; /* Make the socials span the full width */
+    justify-content: center; /* Center the social icons horizontally */
+  }
+}
 
 
-/*---------------main-------------*/
   
 
 
