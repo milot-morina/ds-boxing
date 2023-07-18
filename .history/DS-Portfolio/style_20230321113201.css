@@ -1,0 +1,566 @@
+html {
+  scroll-behavior: smooth;
+  transition: 2s;
+  overflow-x: hidden;
+}
+
+body {
+  text-align: center;
+  overflow-x: hidden;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: black !important;
+}
+
+/* header----*/
+
+
+/*  */
+
+
+
+/* #Fun Facts
+================================================================================= */
+
+
+        .counter-section i { display:block; margin:0 0 10px}
+.counter-section span.counter { font-size:40px; color:#ffffff; line-height:60px; display:block; font-family: "Oswald",sans-serif; letter-spacing: 2px}
+.counter-title{ font-size:12px; letter-spacing:2px; text-transform: uppercase}
+.counter-icon {top:25px; position:relative}
+.counter-style2 .counter-title {letter-spacing: 0.55px; float: left; ; color:#ffffff;}
+.counter-style2 span.counter {letter-spacing: 0.55px; float: left; margin-right: 10px;}
+.counter-style2 i {float: right; line-height: 26px; margin: 0 10px 0 0}
+.counter-subheadline span {float: right;}  
+
+.medium-icon {
+    font-size: 40px !important;
+    margin-bottom: 15px !important;
+} 
+
+.container{
+    margin-top:200px;
+}
+
+
+
+
+/*  */
+
+
+header {
+  background-color: transparent;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  z-index: 100;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: black;
+}
+
+
+
+.navbar-links {
+  width: 100%;
+  display: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-size: 15px;
+ 
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  
+  display: block;
+}
+
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.navbar-links.active {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+i {
+  color: white;
+}
+
+i:hover {
+  color: #B4AC25;
+  cursor: pointer;
+}
+
+
+
+video {
+  width: 100%;
+  position: relative;
+  height: auto;
+  pointer-events: none;
+  display: none;
+}
+
+
+
+.socials {
+  width: 47%;
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+i {
+  margin-left: 12px;
+  font-size: 24px;
+}
+
+
+.header-club {
+  color: white;
+  padding-inline: 10px;
+  margin-top: 5px;
+  max-width: 80px;
+  display: block;
+  margin-inline: auto;
+  font-weight: 700;
+}
+
+
+.header-club:hover {
+  color: white;
+  border-color: #B4AC25;
+  
+}
+
+.home-btn {
+  color: white;
+  padding-inline: 10px;
+  margin-top: 5px;
+  max-width: 80px;
+  display: block;
+  margin-inline: auto;
+  font-weight: 700;
+}
+
+.home-btn:hover {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.header-link {
+  color: white;
+  padding-inline: 10px;
+  margin-top: 5px;
+  max-width: 80px;
+  display: block;
+  margin-inline: auto;
+  font-weight: 700;
+}
+
+.header-link:hover {
+  color: #B4AC25;
+}
+
+a {
+  position: relative;
+}
+
+a::after {
+  content: " ";
+  position: absolute;
+  background-color: #B4AC25;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+
+
+  
+
+/*---------------header-----------*/
+
+
+
+
+/*---------------------- collapsible table ------------------------*/
+
+.main-collapsible {
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 120px 40px;
+}
+
+
+
+.container-collapsible {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+hr {
+  background-color: white;
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+}
+
+
+
+.collapsible-button {
+  background-color: rgb(24, 24, 24);
+  color: gray;
+  cursor: pointer;
+  padding: 5px;
+  width: 93%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border: none;
+}
+
+
+
+
+
+.button-name-collapsible {
+  color: white;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  
+}
+
+
+.button-name-collapsible:hover {
+  color: #B4AC25;
+}
+
+
+
+.collapsible-button:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.collapsible-button:hover::after{
+  color: #B4AC25;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  width: 93%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color:  rgb(24, 24, 24);
+  color: white;
+  margin-bottom: 10px;
+}
+
+/*---------------------- collapsible table ------------------------*/
+
+
+
+/*----------animations------------*/
+
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(60%);
+  transition: all 700ms;
+}
+
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-60%);
+  transition: all 700ms;
+}
+
+.hidden3 {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(-5%);
+  transition: all .7s;
+}
+
+
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+/*--------------animations------------------*/
+
+
+/*---------main---------------*/
+
+body {
+  background-color: black;
+  
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+.first-seperator {
+  display: none;
+}
+
+@media(min-width: 687px) and (max-width: 900px) {
+  .column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 28%;
+  }
+}
+
+
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section2 {
+  margin-top: 70px;
+}
+
+.section2 img {
+  width: 80%;
+  max-width: 500px;
+  display: block;
+  margin-inline: auto;
+}
+
+.text {
+  color: white;
+  max-width: 440px;
+  display: block;
+  margin-inline: auto;
+}
+
+.text p {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.text .section-h,
+.section-h {
+  font-size: clamp(2.15rem, 2.5rem, 3.2rem);
+  color: #B4AC25;
+  font-weight: 700;
+}
+
+.images img {
+  max-width: 550px;
+  width: 100%;
+}
+
+.section3 .images img {
+  width: 100%;
+}
+
+
+input {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 30px;
+  margin: 5px;
+  max-width: 410px;
+}
+
+input::placeholder {
+  color: white;
+  padding: 12px;
+}
+
+.long-inputs-form > input{
+  width: 170px;
+}
+
+.section6 button{
+  margin-top: 17px;
+  padding: 10px 20px;
+}
+
+.section6 .socials{
+  justify-content: center;
+}
+
+
+
+@media (min-width: 555px) {
+  video {
+    display: block;
+  }
+
+  .long-inputs-form > input{
+    width: 470px;
+  }
+
+}
+
+
+@media(min-width: 865px) {
+
+
+  .toggle-button {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-links  {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-links.active {
+    flex-direction: row;
+  }
+
+  .socials {
+    width: 6%;
+    display: flex;
+    justify-content: right;
+  }
+
+  .header-club {
+    margin-left: 14px;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 900px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  
+  .long-inputs-form > input{
+    width: 470px;
+  }
+  
+}
+
+
+
+
+
+
+
+/*---------------main-------------*/
+  
+
+
+
+
+
+
