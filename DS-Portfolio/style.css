@@ -220,6 +220,9 @@ a {
   position: relative;
 }
 
+
+
+
 a::after {
   content: " ";
   position: absolute;
@@ -233,6 +236,10 @@ a::after {
 
 a:hover::after {
   width: 100%;
+}
+
+.socials a:hover::after {
+  width: 120%;
 }
 
 
@@ -499,9 +506,57 @@ input::placeholder {
   video {
     display: block;
   }
-
-
 }
+
+@media (max-width: 555px) {
+  video {
+    display: block;
+  }
+
+  .navbar-links li a {
+    font-size: 12px; /* Set the desired font size */
+  }
+}
+@media (max-width: 450px) {
+  video {
+    display: block;
+  }
+
+  .navbar-links li a {
+    font-size: 10px; /* Set the desired font size */
+  }
+}
+
+@media (max-width: 396px) {
+  video {
+    display: block;
+  }
+
+  .navbar-links li a {
+    font-size: 7px; /* Set the desired font size */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .brand-title img {
+    display: none;
+  }
+  
+  .navbar {
+    margin-top: 20px; /* Add the desired margin-top value */
+  }
+  
+  .navbar-links ul {
+    margin-top: 10px; /* Add the desired margin-top value */
+  }
+  
+  .navbar-links li {
+    margin-bottom: 1rem; /* Add the desired margin-bottom value */
+  }
+}
+
+
 
 
 @media(min-width: 865px) {
